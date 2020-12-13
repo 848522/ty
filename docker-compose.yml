@@ -1,0 +1,17 @@
+version: '3'
+services:
+  menu-item-service:
+    image: menu-item-app
+    build: menuitem/.
+    ports:
+      - 8090:8090
+  orders-service:
+    image: orders-app
+    build: orders/.
+    ports:
+      - 8091:8091
+  authentication-service:
+    image: auth-app
+    build: authentication/.
+    ports:
+      - 8092:8092
